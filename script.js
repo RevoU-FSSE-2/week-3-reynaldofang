@@ -17,6 +17,7 @@ navEl.addEventListener("click", () => {
 // Ambil semua elemen navbar yang memiliki kelas "nav_link"
 const navLinks = document.querySelectorAll(".nav_link");
 
+
 // Tambahkan event listener pada setiap elemen navbar
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
