@@ -360,6 +360,17 @@ h2 {
 
 /** SLider Corousell */
 
+.container-carosell {
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
 .slider {
   display: flex;
   aspect-ratio: 16 / 9;
@@ -370,9 +381,6 @@ h2 {
   border-radius: 0.5rem;
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
   scrollbar-width: none; /* Hide scrollbar Firefox */
-  height: auto;
-  width: 100;
-  align-items: center;
 }
 
 .slider::-webkit-scrollbar {
@@ -446,6 +454,10 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: inherit;
+}
+
+#country option[value=""] {
+  display: none;
 }
 
 .button-contact button {
@@ -560,5 +572,26 @@ footer {
 
   .figure figure {
     margin-bottom: 20px;
+  }
+
+  #gallery {
+    min-height: 50vh;
+  }
+
+  .container-carosell {
+    min-height: 15vh;
+  }
+  .slider-wrapper {
+    max-width: 100%;
+  }
+
+  .slider {
+    aspect-ratio: unset;
+    flex-wrap: nowrap;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
   }
 }

@@ -182,23 +182,23 @@
         </figure>
       </section>
 
-      <section class="container">
+      <section class="container-carosell">
         <div class="slider-wrapper">
           <div class="slider">
             <img
               id="slide-1"
-              src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
-              alt="3D rendering of an imaginary orange planet in space"
+              src="https://nerdbear.com/wp-content/uploads/2022/03/Tanjiro-Kamado.jpg.webp"
+              alt="Tanjiro Fight"
             />
             <img
               id="slide-2"
-              src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
-              alt="3D rendering of an imaginary green planet in space"
+              src="https://www.hindustantimes.com/ht-img/img/2023/04/30/550x309/Nezuko_vs_Hantegu_Blood_Demon_Art_1682890950741_1682890964978.jfif"
+              alt="Nezuko Fight"
             />
             <img
               id="slide-3"
-              src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80"
-              alt="3D rendering of an imaginary blue planet in space"
+              src="https://i.kym-cdn.com/entries/icons/original/000/040/028/sec.jpg"
+              alt="Tanjiro Meme Face"
             />
           </div>
           <div class="slider-nav">
@@ -209,7 +209,7 @@
         </div>
       </section>
 
-      <form method="post" action="">
+      <form method="post" action="/submit-form">
         <section id="contact">
           <div class="container-contact custom-background">
             <h2><i class="far fa-envelope"></i> Send Your Data Here</h2>
@@ -226,13 +226,27 @@
               type="email"
               id="email"
               placeholder="Enter your email"
-              pattern=".+@"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <label for="birth">Your Birthday</label>
+            <input
+              type="date"
+              id="birth"
+              min="1974-07-01"
+              max="2023-07-01"
               required
             />
             <label for="message">Message:</label>
-            <textarea id="message" placeholder="Enter your message"></textarea>
+            <textarea
+              id="message"
+              placeholder="Enter your message"
+              required
+              minlength="10"
+            ></textarea>
             <label for="country">Country :</label>
-            <select name="country" id="country">
+            <select name="country" id="country" required>
+              <option value="">None</option>
               <option value="indonesia">Indonesia</option>
               <option value="singapore">Singapore</option>
               <option value="japan">Japan</option>
