@@ -15,7 +15,7 @@ This is assigment in week 3 on Full-Stack Engineering - Making a Landing Web Pag
 
 ##
 
-You Can See My Website in Here [Ercnard Sieghart](https://reynaldofang-3.netlify.app/) :shipit:
+You Can See My Website in Here [Kimetsu No Yaiba](https://reynaldofang-3.netlify.app/) :shipit:
 
 If you want to follow me on social media, you can directly click the link below.
 
