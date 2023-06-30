@@ -14,6 +14,10 @@
       type="image/x-icon"
       href="https://i.ibb.co/bsM3VzW/Kimetsu-no-yaiba-Logo.webp"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -36,6 +40,13 @@
               <a class="nav_link" href="#gallery">Gallery</a>
             </li>
             <li><a class="nav_link" href="#contact">Contact</a></li>
+            <button
+              id="dark-mode-toggle"
+              class="dark-mode-toggle"
+              onclick="toggleDarkMode()"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
           </ul>
         </nav>
         <div class="hamburger">
@@ -69,7 +80,7 @@
 
         <div class="column-gallery image-bottom">
           <img
-            src="https://asia.sega.com/kimetsu_hinokami/en/assets/img/sub/character/chara4.png"
+            src="https://i.ibb.co/bQsygK2/chara4.png"
             alt="Inosuke Fighting"
           />
         </div>
@@ -86,8 +97,8 @@
           </figcaption>
         </figure>
         <div class="article">
-          <h2>About Tanjiro</h2>
-          <p>
+          <h2 class="figcaption-tanjiro">About Tanjiro</h2>
+          <p class="p-tanjiro">
             Tanjiro Komando is a Demon Slayer in the Demon Slayer Corps, who
             joined to find a remedy to turn his sister, Nezuko Kamado, back into
             a human and to hunt down and kill demons, and later swore to defeat
@@ -174,7 +185,7 @@
 
         <figure class="gallery_item gallery_item-7">
           <img
-            src="https://www.hindustantimes.com/ht-img/img/2023/05/07/1600x900/Demon_slayer_dragon_halo_dance_1683496060066_1683496071248.jfif"
+            src="https://i.ibb.co/x3GzR0C/Demon-slayer-dragon-halo-dance-1683496060066-1683496071248.jpg"
             class="gallery_img"
             alt="Tanjiro Sun Breathing"
           />
@@ -192,7 +203,7 @@
             />
             <img
               id="slide-2"
-              src="https://www.hindustantimes.com/ht-img/img/2023/04/30/550x309/Nezuko_vs_Hantegu_Blood_Demon_Art_1682890950741_1682890964978.jfif"
+              src="https://i.ibb.co/d5ZGk1D/Nezuko-vs-Hantegu-Blood-Demon-Art-1682890950741-1682890964978.jpg"
               alt="Nezuko Fight"
             />
             <img
@@ -202,14 +213,14 @@
             />
           </div>
           <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
+            <a href="#slide-1" class="slide"></a>
+            <a href="#slide-2" class="slide"></a>
+            <a href="#slide-3" class="slide"></a>
           </div>
         </div>
       </section>
 
-      <form method="post" action="/submit-form">
+      <form method="post" action="">
         <section id="contact">
           <div class="container-contact custom-background">
             <h2><i class="far fa-envelope"></i> Send Your Data Here</h2>
