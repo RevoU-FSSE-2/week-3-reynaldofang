@@ -21,6 +21,7 @@ body {
 .dark-mode {
   background-color: #222;
   color: #fff;
+  
 }
 
 .dark-mode-toggle {
@@ -35,6 +36,7 @@ body {
   margin-left: 10px;
   font-size: 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  
 }
 
 .dark-mode-toggle:hover {
@@ -428,6 +430,10 @@ h2 {
 
 .slider::-webkit-scrollbar {
   display: none;
+}
+
+.slide{
+ font-size: 0;
 }
 
 .slider img {
