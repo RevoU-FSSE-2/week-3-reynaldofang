@@ -35,8 +35,7 @@ body {
   padding: 0;
   margin-left: 10px;
   font-size: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .dark-mode-toggle:hover {
@@ -175,7 +174,7 @@ header {
 
 .image-gallery .column-gallery {
   flex-basis: 580px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   overflow: hidden;
   position: relative;
 }
@@ -186,7 +185,7 @@ header {
   border-radius: 5px;
   margin: 6px;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .image-gallery .column-gallery:hover img {
